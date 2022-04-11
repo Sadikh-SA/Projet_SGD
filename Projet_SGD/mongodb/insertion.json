@@ -2,11 +2,11 @@ jou =
 {
 "identifiant": 1,
 "nom": {
-  "prenom": "Benjamin",
-  "nom": "Repecaud"
+  "prenom": "Ababacar Sadikh",
+  "nom": "GUEYE"
   },
-"login": "br683616",
-"MotDePass": "br681636"
+"login": "ag425107",
+"MotDePass": "ag425107"
 }
 db.Joueur.insertOne(jou);
 
@@ -14,11 +14,11 @@ jou1 =
 {
 "identifiant": 2,
 "nom": {
-"prenom": "Oussama",
-"nom": "AIT LAAMA"
+"prenom": "Mélissa",
+"nom": "Makhlouf"
 },
-"login": "oa258899",
-"MotDePass": "oa258899"
+"login": "melissa",
+"MotDePass": "melissa"
 }
 db.Joueur.insertOne(jou1);
 
