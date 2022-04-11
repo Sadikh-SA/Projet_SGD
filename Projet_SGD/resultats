@@ -1,0 +1,69 @@
+*************Jeux par éditeur
+ db.Jeux.find({"Editeur":{$in:["Bandai Namco Entertainment","Nintendo"]}},{'nom':1, 'Editeur':1});
+{ "_id" : ObjectId("5e1d79441ffccdf425bc6b32"), "nom" : "tekken 5", "Editeur" : "Bandai Namco Entertainment" }
+{ "_id" : ObjectId("5e1d7ba51ffccdf425bc6b39"), "nom" : "Mario Kart", "Editeur" : "Bandai Namco Entertainment" }
+{ "_id" : ObjectId("5e21631d49dd0503f639fb41"), "nom" : "Mario Bros", "Editeur" : "Bandai Namco Entertainment" }
+
+*************Nouveaux jeux
+{ "_id" : ObjectId("5e1d79441ffccdf425bc6b32"), "nom" : "tekken 5" }
+{ "_id" : ObjectId("5e1d7ba51ffccdf425bc6b39"), "nom" : "Mario Kart" }
+
+*************Vieux jeux
+{ "_id" : ObjectId("5e21631d49dd0503f639fb41"), "nom" : "Mario Bros", "Edition" : { "Année" : 2006 } }
+
+*************Prix entre 60 et 25
+{ "_id" : ObjectId("5e1d79441ffccdf425bc6b32"), "nom" : "tekken 5", "prix" : 50 }
+{ "_id" : ObjectId("5e1d7ba51ffccdf425bc6b39"), "nom" : "Mario Kart", "prix" : 25 }
+
+*************Jeux les mieux notés
+{ "_id" : [ "tekken 5" ], "moyenne" : 37.5 }
+{ "_id" : [ "Mario Kart" ], "moyenne" : 55 }
+{ "_id" : [ "Injustice" ], "moyenne" : 75 }
+{ "_id" : [ "Mario Bros" ], "moyenne" : 80 }
+
+*************Classement jeux commentés
+{ "_id" : { "id" : 9, "nom" : [ "Injustice" ] }, "total" : 2 }
+{ "_id" : { "id" : 5, "nom" : [ "Mario Kart" ] }, "total" : 2 }
+{ "_id" : { "id" : 0, "nom" : [ "tekken 5" ] }, "total" : 2 }
+{ "_id" : { "id" : 1, "nom" : [ "Mario Bros" ] }, "total" : 1 }
+
+************************Jeux les mieux notes
+{'_id': ['Mario Bros'], 'moyenne': 80.0}
+{'_id': ['Injustice'], 'moyenne': 75.0}
+{'_id': ['Mario Kart'], 'moyenne': 55.0}
+{'_id': ['tekken 5'], 'moyenne': 37.5}
+
+************************Note min / max de chaque jeu
+{'_id': ['Mario Bros'], 'noteMax': 80.0, 'noteMin': 80.0}
+{'_id': ['Mario Kart'], 'noteMax': 100.0, 'noteMin': 10.0}
+{'_id': ['Injustice'], 'noteMax': 90.0, 'noteMin': 60.0}
+{'_id': ['tekken 5'], 'noteMax': 50.0, 'noteMin': 25.0}
+
+************************Meilleurs jeux au meilleur prix
+{'_id': {'nom': ['Injustice'], 'prix': [15.0]}, 'moyenne': 75.0}
+{'_id': {'nom': ['Mario Bros'], 'prix': [15.0]}, 'moyenne': 80.0}
+
+************************Jeux qui font le plus parler
+{'_id': {'nom': ['Mario Kart']}, 'nbAvis': 2}
+{'_id': {'nom': ['Injustice']}, 'nbAvis': 2}
+{'_id': {'nom': ['tekken 5']}, 'nbAvis': 2}
+{'_id': {'nom': ['Mario Bros']}, 'nbAvis': 1}
+
+************************Pourcentage d'avis positifs sur le site
+{'_id': 0.0, 'value': {'nbAvis': 2.0, 'nbAvisPositif': 0.0, 'pourcentage': 0.0}}
+{'_id': 1.0, 'value': {'nbAvis': 1.0, 'nbAvisPositif': 1.0, 'note': 80.0}}
+{'_id': 5.0,
+ 'value': {'nbAvis': 2.0, 'nbAvisPositif': 1.0, 'pourcentage': 50.0}}
+{'_id': 9.0,
+ 'value': {'nbAvis': 2.0, 'nbAvisPositif': 2.0, 'pourcentage': 100.0}}
+
+************************Note min / max de Mario Kart
+{'noteMax': 100.0, '_id': 'Mario Kart', 'noteMin': 10.0}
+
+************************oa258899: ses coups de coeur
+{'_id': {'nomJeu': ['Mario Kart'], 'note': 100.0, 'login': ['oa258899']}}
+{'_id': {'nomJeu': ['Injustice'], 'note': 90.0, 'login': ['oa258899']}}
+
+************************RECHERCHE: Mario
+{'_id': ['Mario Bros'], 'moyenne': 80.0}
+{'_id': ['Mario Kart'], 'moyenne': 55.0}

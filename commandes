@@ -1,0 +1,8 @@
+ssh ag425107@mongo
+mongo -u ag425107 -p ag425107 -authenticationDatabase ag425107
+use ag425107
+
+python3
+import nomFichier
+
+(ctrl+d pour quitter)
